@@ -1,5 +1,5 @@
 # GitHub Actions Fundamentals
-DAPC
+DAPC push
 Repo for the `GitHub Actions Fundamentals` training.
 
 ## 👉 Objectives
