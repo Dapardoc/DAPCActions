@@ -1,0 +1,23 @@
+name: Container Actyon
+description: launch docker in actyon
+author: dpardoc
+
+# Define your inputs here.
+inputs:
+  who-to-greet:
+    description: Who to greet
+    required: true
+    default: NORRIS
+
+# Define your outputs here.
+outputs:
+  time:
+    description: ALL TIME CHUCK!
+
+runs:
+  using: docker
+  image: Dockerfile
+  env:
+    INPUT_WHO_TO_GREET: ${{ inputs.who-to-greet }}
+  args:
+  - ${{ inputs.who-to-greet }}
